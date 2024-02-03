@@ -1,9 +1,9 @@
-import TodoList from "@/components/TodoList.tsx";
+import { TodoListView } from "@/views/TodoListView.tsx";
 
 const App = () => {
   return (
     <div>
-      <TodoList />
+      <TodoListView />
     </div>
   );
 };
