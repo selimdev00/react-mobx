@@ -22,11 +22,16 @@ export class TodoList {
     makeObservable(this, {
       todos: observable,
       toggleTodo: action,
+      addTodo: action,
       completedTodos: computed,
       activeTodos: computed,
     });
 
     this.todos = todos;
+  }
+
+  addTodo(todo: Todo) {
+    this.todos.push(todo);
   }
 
   toggleTodo(id: number) {
